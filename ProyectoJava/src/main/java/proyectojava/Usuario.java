@@ -1,51 +1,57 @@
 package proyectojava;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author manana
+ * @author Salah
  */
 public class Usuario {
+    private String  email;
     private String nombre;
-    private CuentaJuego cuentaJuego;
-    private int puntos;
-    private int monedas;
+    private String password;
+    private ArrayList<Equipo> equipos = new ArrayList<>();
 
-    public Usuario(String nombre) {
+    public Usuario(String email, String nombre, String password) {
+        
+        this.email = email;
         this.nombre = nombre;
-        this.cuentaJuego = new CuentaJuego(nombre);
-        this.puntos = 0;
-        this.monedas = 0;
+        this.password = password;
+    }
+    public Usuario(){
+        
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getNombre() {
         return nombre;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public ArrayList<Equipo> getEquipos() {
+        return equipos;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public CuentaJuego getCuentaJuego() {
-        return cuentaJuego;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public void setCuentaJuego(CuentaJuego cuentaJuego) {
-        this.cuentaJuego = cuentaJuego;
+    public void setEquipos(ArrayList<Equipo> equipos) {
+        this.equipos = equipos;
     }
-
-    public int getPuntos() {
-        return puntos;
-    }
-
-    public void setPuntos(int puntos) {
-        this.puntos = puntos;
-    }
-
-    public int getMonedas() {
-        return monedas;
-    }
-
-    public void setMonedas(int monedas) {
-        this.monedas = monedas;
-    }
+   
 }
