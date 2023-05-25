@@ -4,20 +4,25 @@
  */
 package com.app.launch;
 
-import com.app.models.GestoraEquipo;
-import com.app.models.GestoraFutbolista;
-import com.app.models.GestoraUsuario;
-import com.app.models.Futbolista;
+import com.app.models.*;
 
-import com.app.models.Usuario;
 
-/**
- *
- * @author Profesormanana
- */
 public class ProyectoUsuario {
-
+    
     public static void main(String[] args) {
+        
+        DAOFutbolista daoFutbolista= new DAOFutbolista();
+        
+        Futbolista f = new Futbolista("Dios Mesianico  Lionel Andrés", "Messi", 35, "Argentina", "delantero", 37, 86, 83, 89);
+       
+        
+        System.out.println(daoFutbolista.grabar(f).toString());
+        
+        
+        
+    }
+
+    /*public static void main(String[] args) {
         GestoraUsuario gu = new GestoraUsuario();
         int i;
         gu.createUser("Ramon", "ramon_perez@gmail.com", "1234");
@@ -47,6 +52,6 @@ public class ProyectoUsuario {
         ge.addJugadorEquipo(du);
 
         ge.deleteJugador(fu);
-    }
+    }*/
 
 }

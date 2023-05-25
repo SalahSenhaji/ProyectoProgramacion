@@ -41,14 +41,4 @@ public class GestoraEquipo {
          this.equipo.deleteFutbolista(fu.getNombre());
         
     }
-    
-
-    /*public void guardarEquipo() {
-
-    }*/
-
-    public String leerEquipos(Equipo e) {
-        return e.toString();
-    }
-
 }
