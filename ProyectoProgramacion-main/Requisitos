@@ -1,0 +1,14 @@
+Documento word requisitos
+//necesitamos una base de dasos de unos 40 jugadores
+
+
+1º Hay un usuario, se registra, hace inicio de sesion, modificar/eliminar
+2º El juego tiene unos registros, que son futbolistas(40 o mas)
+3º Cada futbolistas tiene unas estadisticas que se enfrentan, (enfrentamos solo los equipos)
+4º Un futbolista juega partidos, los futbolista jugaran de dos en dos.
+5º Cuando un usuario entra, puede iniciar partida o unirse a otra iniciada.
+6º El resultado de la partida, se guarda en base de datos.
+7º Los usuarios tambien se guardan en base de datos.
+8º Hay un proceso en base a habilidades/estadisticas que resuelve la puntuacion de cada equipo
+9º El usuario puede ver el historico de partida.
+10º El usuario obtiene una puntuacion ranking en el juego.
